@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" onMouseClicked="#changeFocus" prefHeight="678.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" stylesheets="@ledgerEdit.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logintest.Controllers.LedgerEditController">
+    <children>
+        <MFXButton fx:id="backButton" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="26.0" layoutY="33.0" onAction="#handleSubmenu" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </MFXButton>
+        <MFXTextField fx:id="id" borderGap="0.0" disable="true" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="160.0" layoutY="94.0" prefHeight="40.0" prefWidth="105.0" styleClass="textFieldsLedgerEdit" AnchorPane.bottomAnchor="544.0" AnchorPane.leftAnchor="160.0">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+      </MFXTextField>
+        <Label layoutX="37.0" layoutY="94.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="118.0" styleClass="labelsLedgerEdit" text="ID" AnchorPane.bottomAnchor="544.0" AnchorPane.leftAnchor="37.0">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+      </Label>
+        <Label layoutX="37.0" layoutY="149.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="118.0" styleClass="labelsLedgerEdit" text="Name" AnchorPane.bottomAnchor="489.0" AnchorPane.leftAnchor="37.0" />
+        <MFXTextField fx:id="name" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="160.0" layoutY="149.0" prefHeight="40.0" prefWidth="280.0" styleClass="textFieldsLedgerEdit" AnchorPane.bottomAnchor="489.0" AnchorPane.leftAnchor="160.0" />
+        <Label layoutX="37.0" layoutY="204.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="118.0" styleClass="labelsLedgerEdit" text="Type" AnchorPane.bottomAnchor="434.0" AnchorPane.leftAnchor="37.0" />
+        <ChoiceBox fx:id="type" layoutX="160.0" layoutY="204.0" prefHeight="40.0" prefWidth="280.0" styleClass="textFields" AnchorPane.bottomAnchor="434.0" AnchorPane.leftAnchor="160.0" />
+        <Label layoutX="37.0" layoutY="259.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="118.0" styleClass="labelsLedgerEdit" text="Amount" AnchorPane.bottomAnchor="379.0" AnchorPane.leftAnchor="37.0" />
+        <MFXTextField fx:id="amount" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="160.0" layoutY="259.0" prefHeight="40.0" prefWidth="280.0" styleClass="textFieldsLedgerEdit" AnchorPane.bottomAnchor="379.0" AnchorPane.leftAnchor="160.0" />
+        <Label layoutX="37.0" layoutY="318.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="118.0" styleClass="labelsLedgerEdit" text="Address" AnchorPane.bottomAnchor="320.0" AnchorPane.leftAnchor="37.0" />
+        <MFXTextField fx:id="address" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="160.0" layoutY="318.0" prefHeight="140.0" prefWidth="392.0" styleClass="textFieldsLedgerEdit" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="160.0" />
+        <Label layoutX="37.0" layoutY="473.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="118.0" styleClass="labelsLedgerEdit" text="Phone No" AnchorPane.bottomAnchor="165.0" AnchorPane.leftAnchor="37.0" />
+        <MFXTextField fx:id="phoneno" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="160.0" layoutY="473.0" prefHeight="40.0" prefWidth="280.0" styleClass="textFieldsLedgerEdit" AnchorPane.bottomAnchor="165.0" AnchorPane.leftAnchor="160.0" />
+        <MFXButton fx:id="saveButton" buttonType="RAISED" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" layoutX="139.0" layoutY="587.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#saveAction" prefHeight="40.0" prefWidth="105.0" styleClass="buttonsLedgerEdit" text="Save" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="160.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MFXButton>
+        <MFXButton fx:id="editButton" buttonType="RAISED" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" layoutX="303.0" layoutY="588.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#editAction" prefHeight="40.0" prefWidth="105.0" styleClass="buttonsLedgerEdit" text="Edit" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="303.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MFXButton>
+      <Label layoutX="578.0" layoutY="94.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="177.0" styleClass="labelsLedgerEdit" text="Search" AnchorPane.bottomAnchor="544.0" AnchorPane.leftAnchor="578.0" AnchorPane.rightAnchor="274.0" />
+      <MFXTextField fx:id="search" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="757.0" layoutY="94.0" onKeyReleased="#searchTableView" prefHeight="40.0" prefWidth="231.0" styleClass="textFieldsLedgerEdit" AnchorPane.bottomAnchor="544.0" AnchorPane.leftAnchor="757.0" AnchorPane.rightAnchor="37.0" />
+      <TableView fx:id="table" layoutX="578.0" layoutY="148.0" onMouseClicked="#tableClick" prefHeight="435.0" prefWidth="414.0" styleClass="tableContentsLedgerEdit" AnchorPane.bottomAnchor="94.79999999999995" AnchorPane.leftAnchor="578.0" AnchorPane.rightAnchor="37.0">
+        <columns>
+          <TableColumn fx:id="tid" prefWidth="128.79998779296875" styleClass="tableContentsLedgerEdit" text="ID" />
+          <TableColumn fx:id="tname" prefWidth="284.79998779296875" styleClass="tableContentsLedgerEdit" text="Name" />
+        </columns>
+      </TableView>
+      <MFXButton fx:id="deleteButton" buttonType="RAISED" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" layoutX="446.0" layoutY="588.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#deleteAction" prefHeight="40.0" prefWidth="105.0" styleClass="buttonsLedgerEdit" text="Delete" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="446.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MFXButton>
+      <Label fx:id="alertLabel" alignment="CENTER" layoutX="160.0" layoutY="534.0" prefHeight="40.0" prefWidth="392.0" styleClass="alertLabelLedgerEdit" />
+    </children>
+</AnchorPane>

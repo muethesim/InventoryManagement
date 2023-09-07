@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="720.0" minWidth="1280.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logintest.Controllers.menuController">
+   <left>
+      <HBox minHeight="720.0" minWidth="330.0" styleClass="menuWindow" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane minHeight="720.0" minWidth="330.0">
+               <MFXButton fx:id="homeButton" buttonType="RAISED" depthLevel="LEVEL5" layoutY="52.0" minHeight="60.0" minWidth="330.0" onAction="#handleLoading" prefHeight="60.0" prefWidth="330.0" rippleColor="#323b4b" styleClass="menuButtons" text="Home">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor></MFXButton>
+               <MFXButton fx:id="salesButton" buttonType="RAISED" depthLevel="LEVEL5" layoutY="112.0" minHeight="60.0" minWidth="330.0" onAction="#handleLoading" prefHeight="60.0" prefWidth="330.0" rippleColor="#323b4b" styleClass="menuButtons" text="Sales">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor></MFXButton>
+               <MFXButton fx:id="purchaseButton" buttonType="RAISED" depthLevel="LEVEL5" layoutY="172.0" minHeight="60.0" minWidth="330.0" onAction="#handleLoading" prefHeight="60.0" prefWidth="330.0" rippleColor="#323b4b" styleClass="menuButtons" text="Purchase">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor></MFXButton>
+               <MFXButton fx:id="inventoryButton" buttonType="RAISED" depthLevel="LEVEL5" layoutX="-1.0" layoutY="232.0" minHeight="60.0" minWidth="330.0" onAction="#handleLoading" prefHeight="60.0" prefWidth="330.0" rippleColor="#323b4b" styleClass="menuButtons" text="Inventory">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor></MFXButton>
+               <MFXButton fx:id="ledgerButton" buttonType="RAISED" depthLevel="LEVEL5" layoutX="-1.0" layoutY="292.0" minHeight="60.0" minWidth="330.0" onAction="#handleLoading" prefHeight="60.0" prefWidth="330.0" rippleColor="#323b4b" styleClass="menuButtons" text="Ledger">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor></MFXButton>
+               <MFXButton fx:id="stockButton" buttonType="RAISED" depthLevel="LEVEL5" layoutY="352.0" minHeight="60.0" minWidth="330.0" onAction="#handleLoading" prefHeight="60.0" prefWidth="330.0" rippleColor="#323b4b" styleClass="menuButtons" text="Stock">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor></MFXButton>
+               <MFXButton fx:id="historyButton" buttonType="RAISED" depthLevel="LEVEL5" disable="true" layoutY="412.0" minHeight="60.0" minWidth="330.0" onAction="#handleLoading" prefHeight="60.0" prefWidth="330.0" rippleColor="#323b4b" styleClass="menuButtons" text="History">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor></MFXButton>
+               <MFXButton fx:id="statisticsButton" buttonType="RAISED" depthLevel="LEVEL5" layoutX="-1.0" layoutY="472.0" minHeight="60.0" minWidth="330.0" onAction="#handleLoading" prefHeight="60.0" prefWidth="330.0" rippleColor="#323b4b" styleClass="menuButtons" text="Statistics">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor></MFXButton>
+               <Label fx:id="loggedinUser" layoutX="5.0" layoutY="682.0" prefHeight="38.0" prefWidth="264.0" styleClass="loginid" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0">
+                  <font>
+                     <Font size="13.0" />
+                  </font>
+               </Label>
+               <ImageView fx:id="logout" fitHeight="28.0" fitWidth="28.0" layoutX="281.0" layoutY="676.0" onMouseClicked="#handleLogout" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="285.0">
+                  <image>
+                     <Image url="@images/logout.png" />
+                  </image>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </ImageView>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="mainView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="720.0" minWidth="950.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <FontIcon iconColor="#161c27" iconLiteral="mdi2w-window-minimize" iconSize="27" layoutX="704.0" layoutY="35.0" onMouseClicked="#minimize" text="󰖰" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="15.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontIcon>
+            <FontIcon iconColor="#161c27" iconLiteral="mdi2w-window-maximize" iconSize="27" layoutX="659.0" layoutY="35.0" onMouseClicked="#maximizeMinimize" text="󰖯" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="15.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontIcon>
+            <FontIcon fill="#161c27" iconColor="#161c27" iconLiteral="mdi2w-window-close" iconSize="27" layoutX="764.0" layoutY="38.0" onMouseClicked="#close" strokeWidth="0.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontIcon>
+            <AnchorPane layoutY="42.0" prefHeight="677.0" prefWidth="950.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="42.0" />
+            <Label fx:id="timeanddate" layoutX="14.0" layoutY="15.0" prefHeight="27.0" prefWidth="270.0" styleClass="liveTime" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

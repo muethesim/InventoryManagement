@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane fx:id="mainAmchorPane" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" stylesheets="@admin.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logintest.Controllers.adminPanelController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FontIcon iconColor="#161c27" iconLiteral="mdi2w-window-minimize" iconSize="27" layoutX="823.0" layoutY="32.0" onMouseClicked="#minimize" text="󰖰">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontIcon>
+            <FontIcon fill="#161c27" iconColor="#161c27" iconLiteral="mdi2w-window-close" iconSize="27" layoutX="859.0" layoutY="33.0" onMouseClicked="#close" strokeWidth="0.0" text="󰖭">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontIcon>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="46.0" prefHeight="706.0" prefWidth="235.0" style="-fx-background-color: #161c27;;" AnchorPane.topAnchor="42.0">
+         <children>
+            <MFXButton fx:id="addUser" layoutX="1.0" onAction="#handleAdminMenu" prefHeight="100.0" prefWidth="234.0" styleClass="buttons" text="Add User" />
+            <MFXButton fx:id="removeEditUser" layoutX="1.0" layoutY="100.0" onAction="#handleAdminMenu" prefHeight="100.0" prefWidth="234.0" styleClass="buttons" text="View / Edit User" />
+            <MFXButton fx:id="backupRestoreUser" layoutX="1.0" layoutY="200.0" onAction="#handleAdminMenu" prefHeight="100.0" prefWidth="234.0" styleClass="buttons" text="Backup / Restore" />
+            <MFXButton fx:id="loginLog" layoutX="1.0" layoutY="303.0" onAction="#handleAdminMenu" prefHeight="100.0" prefWidth="234.0" styleClass="buttons" text="Login Log" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="side" layoutX="228.0" layoutY="46.0" prefHeight="705.0" prefWidth="675.0" style="-fx-background-color: pink;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="235.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="42.0" />
+   </children>
+</AnchorPane>

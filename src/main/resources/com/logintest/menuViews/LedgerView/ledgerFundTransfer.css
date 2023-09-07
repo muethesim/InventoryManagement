@@ -1,0 +1,34 @@
+@import 'fonts/fonts.css';
+
+.labelsLedgerFundTransfer {
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-font-size: 16;
+}
+
+.buttonsLedgerFundTransfer {
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-font-size: 16;
+    -fx-border-radius: 10;
+}
+
+.alertLabelLedgerFundTransfer {
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-font-size: 11;
+}
+
+.textFieldsLedgerFundTransfer {
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-border-radius: 10;
+    -fx-border-color: #a3a19f;
+    -fx-font-size: 15;
+}
+
+.tableContentsLedgerFundTransfer {
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-font-size: 11;
+}

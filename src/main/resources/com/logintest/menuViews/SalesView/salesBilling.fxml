@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="677.0" prefWidth="950.0" style="-fx-background-color: ffffff;" stylesheets="@salesBilling.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logintest.Controllers.SalesBillinController">
+   <children>
+      <MFXButton fx:id="backButton" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="26.0" layoutY="33.0" onAction="#handleSubmenu" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MFXButton>
+      <TableView fx:id="table" layoutX="541.0" layoutY="67.0" prefHeight="445.0" prefWidth="394.0" styleClass="tableContentsSalesBilling" AnchorPane.topAnchor="67.0">
+         <columns>
+            <TableColumn fx:id="tname" prefWidth="149.60003662109375" styleClass="tableContentsSalesBilling" text="Name" />
+            <TableColumn fx:id="tprice" prefWidth="97.60003662109375" styleClass="tableContentsSalesBilling" text="Price" />
+            <TableColumn fx:id="tquan" prefWidth="87.99993896484375" styleClass="tableContentsSalesBilling" text="Quantity" />
+            <TableColumn fx:id="ttotal" prefWidth="59.19998779296873" styleClass="tableContentsSalesBilling" text="Total" />
+         </columns>
+      </TableView>
+      <Label layoutX="79.0" layoutY="75.0" prefHeight="38.0" prefWidth="63.0" styleClass="labelsSalesBilling" text="Sale ID " AnchorPane.leftAnchor="70.0" />
+      <MFXTextField fx:id="saleid" disable="true" floatMode="DISABLED" layoutX="154.0" layoutY="75.0" prefHeight="38.0" prefWidth="86.0" styleClass="textFieldsSalesBilling" AnchorPane.leftAnchor="155.0" />
+      <Label layoutX="306.0" layoutY="75.0" prefHeight="38.0" prefWidth="70.0" styleClass="labelsSalesBilling" text="Ledger " AnchorPane.leftAnchor="306.0" />
+      <MFXTextField fx:id="ledger" floatMode="DISABLED" layoutX="376.0" layoutY="74.0" onAction="#ledgerBal" onKeyReleased="#ledSearch" prefHeight="40.0" prefWidth="154.0" styleClass="textFieldsSalesBilling" text="CASH ACCOUNT" AnchorPane.leftAnchor="376.0" />
+      <Label layoutX="70.0" layoutY="134.0" prefHeight="38.0" prefWidth="22.0" styleClass="labelsSalesBilling" text="ID" AnchorPane.leftAnchor="70.0" />
+      <Label layoutX="72.0" layoutY="184.0" prefHeight="38.0" prefWidth="40.0" styleClass="labelsSalesBilling" text="Item" AnchorPane.leftAnchor="72.0" />
+      <Label layoutX="70.0" layoutY="240.0" prefHeight="38.0" prefWidth="42.0" styleClass="labelsSalesBilling" text="Price" AnchorPane.leftAnchor="70.0" />
+      <Label layoutX="327.0" layoutY="240.0" prefHeight="38.0" prefWidth="70.0" styleClass="labelsSalesBilling" text="Quantity " AnchorPane.leftAnchor="327.0" />
+      <MFXButton fx:id="addBtn" buttonType="RAISED" layoutX="160.0" layoutY="325.0" onAction="#add" prefHeight="40.0" prefWidth="80.0" styleClass="buttonsSalesBilling" text="Add" AnchorPane.leftAnchor="160.0" />
+      <MFXButton fx:id="resetBtn" buttonType="RAISED" layoutX="270.0" layoutY="325.0" onAction="#reset" prefHeight="40.0" prefWidth="80.0" styleClass="buttonsSalesBilling" text="Reset" AnchorPane.leftAnchor="270.0" />
+      <MFXButton fx:id="deleteBtn" buttonType="RAISED" layoutX="380.0" layoutY="325.0" onAction="#delete" prefHeight="40.0" prefWidth="80.0" styleClass="buttonsSalesBilling" text="Delete" AnchorPane.leftAnchor="380.0" />
+      <Label layoutX="69.0" layoutY="410.0" prefHeight="38.0" prefWidth="128.0" styleClass="labelsSalesBilling" text="Ledger Balance" AnchorPane.leftAnchor="69.0" />
+      <Label layoutX="335.0" layoutY="537.0" prefHeight="38.0" styleClass="labelsSalesBilling" text="Total " AnchorPane.leftAnchor="335.0" />
+      <Label layoutX="69.0" layoutY="537.0" prefHeight="38.0" styleClass="labelsSalesBilling" text="Discount" AnchorPane.leftAnchor="69.0" />
+      <Label layoutX="82.0" layoutY="477.0" prefHeight="38.0" prefWidth="70.0" styleClass="labelsSalesBilling" text="Recieved" AnchorPane.leftAnchor="70.0" />
+      <Label layoutX="273.0" layoutY="477.0" prefHeight="38.0" prefWidth="63.0" styleClass="labelsSalesBilling" text="Balance" AnchorPane.leftAnchor="335.0" />
+      <Label layoutX="627.0" layoutY="540.0" prefHeight="38.0" prefWidth="100.0" styleClass="labelsSalesBilling" text="Grand Total" />
+      <MFXTextField fx:id="qnty" floatMode="BORDER" layoutX="410.0" layoutY="239.0" prefHeight="40.0" prefWidth="120.0" styleClass="textFieldsSalesBilling" AnchorPane.leftAnchor="410.0" />
+      <MFXTextField fx:id="id" disable="true" floatMode="DISABLED" layoutX="155.0" layoutY="134.0" prefHeight="38.0" prefWidth="57.0" styleClass="textFieldsSalesBilling" AnchorPane.leftAnchor="155.0" />
+      <MFXTextField fx:id="item" floatMode="DISABLED" layoutX="155.0" layoutY="183.0" onAction="#fill" onKeyReleased="#itemFill" prefHeight="40.0" prefWidth="373.0" styleClass="textFieldsSalesBilling" AnchorPane.leftAnchor="155.0" />
+      <MFXTextField fx:id="price" floatMode="DISABLED" layoutX="155.0" layoutY="239.0" measureUnit="Rs." prefHeight="40.0" prefWidth="120.0" styleClass="textFieldsSalesBilling" AnchorPane.leftAnchor="155.0" />
+      <MFXTextField fx:id="lbal" disable="true" floatMode="DISABLED" layoutX="197.0" layoutY="410.0" measureUnit="Rs." prefHeight="38.0" prefWidth="330.0" styleClass="textFieldsSalesBilling" text="0" AnchorPane.leftAnchor="197.0" />
+      <MFXTextField fx:id="paid" floatMode="BORDER" layoutX="120.0" layoutY="476.0" measureUnit="Rs." onKeyReleased="#paidEdited" prefHeight="40.0" prefWidth="120.0" styleClass="textFieldsSalesBilling" text="0" AnchorPane.leftAnchor="155.0" />
+      <MFXTextField fx:id="total" disable="true" floatMode="BORDER" layoutX="349.0" layoutY="537.0" measureUnit="Rs." prefHeight="40.0" prefWidth="120.0" styleClass="textFieldsSalesBilling" text="0" AnchorPane.leftAnchor="410.0" />
+      <MFXTextField fx:id="remain" disable="true" floatMode="BORDER" layoutX="347.0" layoutY="476.0" measureUnit="Rs." prefHeight="40.0" prefWidth="120.0" styleClass="textFieldsSalesBilling" text="0" AnchorPane.leftAnchor="410.0" />
+      <MFXTextField fx:id="discount" floatMode="BORDER" layoutX="139.0" layoutY="538.0" measureUnit="Rs." onKeyReleased="#tdisc" prefHeight="40.0" prefWidth="120.0" styleClass="textFieldsSalesBilling" text="0" AnchorPane.leftAnchor="155.0" />
+      <MFXTextField fx:id="gtotal" disable="true" floatMode="BORDER" layoutX="753.0" layoutY="538.0" measureUnit="Rs." prefHeight="38.0" prefWidth="120.0" styleClass="textFieldsSalesBilling" text="0" />
+      <MFXButton fx:id="submitBtn" buttonType="RAISED" layoutX="195.0" layoutY="600.0" onAction="#submit" prefHeight="50.0" prefWidth="100.0" styleClass="buttonsSalesBilling" text="Submit" AnchorPane.leftAnchor="195.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MFXButton>
+      <MFXButton fx:id="clearBtn" buttonType="RAISED" layoutX="353.0" layoutY="600.0" onAction="#clearAll" prefHeight="50.0" prefWidth="100.0" styleClass="buttonsSalesBilling" text="Clear">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MFXButton>
+      <Label alignment="CENTER" layoutX="159.0" layoutY="279.0" prefHeight="38.0" prefWidth="300.0" styleClass="alertLabelSalesBilling" />
+      <Label fx:id="alertLabel" alignment="CENTER" layoutX="537.0" layoutY="606.0" prefHeight="38.0" prefWidth="402.0" styleClass="alertLabelSalesBilling" />
+      <MFXButton contentDisplay="GRAPHIC_ONLY" layoutX="248.0" layoutY="62.0" onAction="#upClicked" prefHeight="12.0" prefWidth="26.0">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/up.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MFXButton>
+      <MFXButton contentDisplay="GRAPHIC_ONLY" layoutX="248.0" layoutY="94.0" onAction="#downClicked" prefHeight="12.0" prefWidth="26.0">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/down.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MFXButton>
+   </children>
+</AnchorPane>

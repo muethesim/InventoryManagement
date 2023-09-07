@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="677.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" styleClass="loadingWindow" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logintest.Controllers.LedgerController">
+   <AnchorPane layoutX="14.0" layoutY="372.0" prefHeight="450.0" prefWidth="850.0" style="-fx-background-color: #f4f4f4; -fx-border-color: #f4f4f4; -fx-background-radius: 20; -fx-border-radius: 20;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+      <MFXButton fx:id="ledgerAdd" alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="TOP" depthLevel="LEVEL5" graphicTextGap="0.0" layoutX="38.0" layoutY="23.0" onAction="#handleSubmenu" prefHeight="165.0" prefWidth="190.0" rippleColor="#f4f4f4" styleClass="optionButtons" stylesheets="@../style.css" text=" " textFill="WHITE" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="45.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="99.0" fitWidth="105.0" pickOnBounds="true">
+               <Image url="@../images/ledgeradd.png" />
+            </ImageView>
+         </graphic>
+      </MFXButton>
+      <MFXButton fx:id="ledgerEdit" alignment="CENTER" buttonType="RAISED" contentDisplay="RIGHT" depthLevel="LEVEL5" graphicTextGap="0.0" layoutX="282.0" layoutY="22.0" onAction="#handleSubmenu" prefHeight="165.0" prefWidth="190.0" rippleColor="#f4f4f4" styleClass="optionButtons" stylesheets="@../style.css" text=" " textFill="WHITE" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="300.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <graphic>
+            <ImageView fitHeight="99.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../images/ledgerremove.png" />
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MFXButton>
+      <MFXButton fx:id="ledgerView" alignment="CENTER" buttonType="RAISED" contentDisplay="RIGHT" depthLevel="LEVEL5" disable="true" graphicTextGap="0.0" layoutX="527.0" layoutY="22.0" onAction="#handleSubmenu" prefHeight="165.0" prefWidth="190.0" rippleColor="#f4f4f4" styleClass="optionButtons" stylesheets="@../style.css" text=" " textFill="WHITE" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="555.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <graphic>
+            <ImageView fitHeight="99.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ledgerview.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MFXButton>
+      <MFXButton fx:id="ledgerFundTransfer" alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="TOP" depthLevel="LEVEL5" graphicTextGap="0.0" layoutX="39.0" layoutY="239.0" onAction="#handleSubmenu" prefHeight="165.0" prefWidth="190.0" rippleColor="#f4f4f4" styleClass="optionButtons" stylesheets="@../style.css" text=" " textFill="WHITE" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="45.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="99.0" fitWidth="105.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/ledgerfundtransfer.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MFXButton>
+      <MFXButton fx:id="ledgerAddBalance" alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="TOP" depthLevel="LEVEL5" graphicTextGap="0.0" layoutX="283.0" layoutY="239.0" onAction="#handleSubmenu" prefHeight="165.0" prefWidth="190.0" rippleColor="#f4f4f4" styleClass="optionButtons" stylesheets="@../style.css" text=" " textFill="WHITE" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="300.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="99.0" fitWidth="105.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/ledgeraddbalance.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MFXButton>
+      <Label layoutX="120.0" layoutY="198.0" prefHeight="24.0" prefWidth="42.0" styleClass="buttonLabels" text="Add" />
+      <Label layoutX="375.0" layoutY="198.0" prefHeight="24.0" prefWidth="42.0" styleClass="buttonLabels" text="Edit" />
+      <Label layoutX="625.0" layoutY="198.0" prefHeight="24.0" prefWidth="51.0" styleClass="buttonLabels" text="View" />
+      <Label layoutX="71.0" layoutY="412.0" prefHeight="24.0" prefWidth="140.0" styleClass="buttonLabels" text="Fund Transfer" />
+      <Label layoutX="331.0" layoutY="412.0" prefHeight="24.0" prefWidth="129.0" styleClass="buttonLabels" text="Add Balance" />
+   </AnchorPane>
+   <Label layoutX="50.0" layoutY="139.0" prefHeight="24.0" prefWidth="256.0" styleClass="buttonLabels" text="Please select a category : " AnchorPane.bottomAnchor="515.0" AnchorPane.leftAnchor="50.0" />
+</AnchorPane>

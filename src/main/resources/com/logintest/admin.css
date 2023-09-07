@@ -1,0 +1,15 @@
+@import 'fonts/fonts.css';
+
+.buttons {
+    -fx-background-color: #161c27;
+    -fx-text-fill: #7e8899;
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-font-size: 15;
+}
+
+.buttons: hover {
+    -fx-background-color: #353e4d;
+    -fx-text-fill: #7e8899;
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-font-size: 17;
+}

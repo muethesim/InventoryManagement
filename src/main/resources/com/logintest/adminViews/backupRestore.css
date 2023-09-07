@@ -1,0 +1,28 @@
+@import 'fonts/fonts.css';
+
+.alertLabelBackupRestore {
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-font-size: 13;
+}
+
+.headingBackupRestore {
+     -fx-font-family: 'Comfortaa Bold';
+     -fx-text-fill: #323b4b;
+     -fx-font-size: 25;
+}
+
+.textFieldsBackupRestore {
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-border-radius: 10;
+    -fx-border-color: #a3a19f;
+    -fx-font-size: 14;
+}
+
+.buttonsBackupRestore {
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-font-size: 16;
+    -fx-border-radius: 10;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="675.0" prefWidth="705.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logintest.Controllers.AdminControllers.loginLogController">
+   <children>
+      <TableView fx:id="loginLogTable" layoutX="19.0" layoutY="15.0" prefHeight="625.0" prefWidth="646.0" styleClass="tableContentsLoginLog" stylesheets="@loginLog.css" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="64.79999160766602" styleClass="tableContentsLoginLog" text="ID" />
+          <TableColumn fx:id="timeColumn" prefWidth="248.7999725341797" styleClass="tableContentsLoginLog" text="Time" />
+            <TableColumn fx:id="dateColumn" prefWidth="141.5999755859375" styleClass="tableContentsLoginLog" text="Date" />
+            <TableColumn fx:id="userColumn" prefWidth="191.2000732421875" styleClass="tableContentsLoginLog" text="User" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="677.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" stylesheets="@stockAddRemove.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logintest.Controllers.StockRemoveController">
+    <children>
+        <MFXButton fx:id="backButton" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="26.0" layoutY="33.0" onAction="#handleSubmenu" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </MFXButton>
+        <Label layoutX="101.0" layoutY="375.0" prefHeight="40.0" prefWidth="105.0" styleClass="labelsStockAddRemove" text="Item " AnchorPane.bottomAnchor="280.0" AnchorPane.leftAnchor="100.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="101.0" layoutY="433.0" prefHeight="40.0" prefWidth="105.0" styleClass="labelsStockAddRemove" text="Count" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="100.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <MFXTextField fx:id="item" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="220.0" layoutY="357.0" onKeyReleased="#itemAutoCompletion" prefHeight="40.0" prefWidth="250.0" styleClass="textFieldsStockAddRemove" AnchorPane.bottomAnchor="280.0" AnchorPane.leftAnchor="220.0">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </MFXTextField>
+        <MFXTextField fx:id="count" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="220.0" layoutY="437.0" prefHeight="40.0" prefWidth="250.0" styleClass="textFieldsStockAddRemove" AnchorPane.leftAnchor="220.0">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </MFXTextField>
+        <MFXButton buttonType="RAISED" layoutX="220.0" layoutY="557.0" onAction="#submitAction" prefHeight="40.0" prefWidth="95.0" styleClass="buttonsStockAddRemove" text="Submit">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MFXButton>
+        <MFXButton buttonType="RAISED" layoutX="370.0" layoutY="557.0" onAction="#clearAction" prefHeight="40.0" prefWidth="95.0" styleClass="buttonsStockAddRemove" text="Clear">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MFXButton>
+        <Label fx:id="alertLabel" alignment="CENTER" layoutX="220.0" layoutY="501.0" prefHeight="40.0" prefWidth="250.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,7 @@
+@import 'fonts/fonts.css';
+
+.tableContentsLoginLog {
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-font-size: 11;
+}

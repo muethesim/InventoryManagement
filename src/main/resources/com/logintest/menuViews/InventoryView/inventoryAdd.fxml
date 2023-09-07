@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="677.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" stylesheets="@inventoryAdd.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logintest.Controllers.InventoryAddController">
+    <children>
+        <MFXButton fx:id="backButton" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="26.0" layoutY="33.0" onAction="#handleSubmenu" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </MFXButton>
+      <MFXTextField fx:id="id" borderGap="0.0" editable="false" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="275.0" layoutY="150.0" prefHeight="40.0" prefWidth="95.0" styleClass="textFieldsInventoryAdd" AnchorPane.leftAnchor="230.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+      <Label layoutX="71.0" layoutY="147.0" prefHeight="40.0" prefWidth="100.0" styleClass="labelsInventoryAdd" text="ID" />
+      <Label layoutX="71.0" layoutY="198.0" prefHeight="40.0" prefWidth="100.0" styleClass="labelsInventoryAdd" text="Name" />
+      <MFXTextField fx:id="name" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="275.0" layoutY="213.0" prefHeight="40.0" prefWidth="200.0" styleClass="textFieldsInventoryAdd" AnchorPane.leftAnchor="230.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+      <Label layoutX="71.0" layoutY="270.0" prefHeight="40.0" prefWidth="100.0" styleClass="labelsInventoryAdd" text="Quantity" />
+      <ChoiceBox fx:id="quantity" layoutX="275.0" layoutY="273.0" prefHeight="40.0" prefWidth="95.0" AnchorPane.leftAnchor="230.0" />
+      <Label layoutX="71.0" layoutY="329.0" prefHeight="40.0" prefWidth="138.0" styleClass="labelsInventoryAdd" text="Purchase Price" />
+      <Label layoutX="541.0" layoutY="329.0" prefHeight="40.0" prefWidth="100.0" styleClass="labelsInventoryAdd" text="Sale Price" AnchorPane.leftAnchor="520.0" />
+      <MFXTextField fx:id="pprice" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="275.0" layoutY="332.0" prefHeight="40.0" prefWidth="121.0" styleClass="textFieldsInventoryAdd" AnchorPane.bottomAnchor="308.0" AnchorPane.leftAnchor="230.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+      <MFXTextField fx:id="sprice" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="636.0" layoutY="329.0" prefHeight="40.0" prefWidth="121.0" styleClass="textFieldsInventoryAdd" AnchorPane.bottomAnchor="308.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+      <ChoiceBox fx:id="gst" layoutX="275.0" layoutY="393.0" prefHeight="40.0" prefWidth="95.0" AnchorPane.bottomAnchor="245.0" AnchorPane.leftAnchor="230.0" />
+      <Label layoutX="71.0" layoutY="390.0" prefHeight="40.0" prefWidth="100.0" styleClass="labelsInventoryAdd" text="GST" />
+      <Label layoutX="541.0" layoutY="390.0" prefHeight="40.0" prefWidth="76.0" styleClass="labelsInventoryAdd" text="MRP" AnchorPane.leftAnchor="520.0" />
+      <MFXTextField fx:id="mrp" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="636.0" layoutY="393.0" prefHeight="40.0" prefWidth="121.0" styleClass="textFieldsInventoryAdd" AnchorPane.bottomAnchor="245.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+      <Label layoutX="71.0" layoutY="446.0" prefHeight="40.0" prefWidth="112.0" styleClass="labelsInventoryAdd" text="Initial Stock" />
+      <Label layoutX="71.0" layoutY="506.0" prefHeight="40.0" prefWidth="100.0" styleClass="labelsInventoryAdd" text="Barcode" />
+      <MFXTextField fx:id="stock" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="275.0" layoutY="449.0" prefHeight="40.0" prefWidth="200.0" styleClass="textFieldsInventoryAdd" AnchorPane.leftAnchor="230.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+      <MFXTextField fx:id="barcode" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="275.0" layoutY="509.0" prefHeight="40.0" prefWidth="200.0" styleClass="textFieldsInventoryAdd" AnchorPane.leftAnchor="230.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+      <MFXButton buttonType="RAISED" layoutX="228.0" layoutY="623.0" onAction="#submitAction" prefHeight="40.0" prefWidth="100.0" styleClass="buttonsInventoryAdd" text="Submit" AnchorPane.leftAnchor="228.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MFXButton>
+      <MFXButton buttonType="RAISED" layoutX="380.0" layoutY="623.0" onAction="#clearAction" prefHeight="40.0" prefWidth="100.0" styleClass="buttonsInventoryAdd" text="Clear" AnchorPane.leftAnchor="380.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MFXButton>
+      <Label fx:id="alertLabel" alignment="CENTER" layoutX="230.0" layoutY="570.0" prefHeight="40.0" prefWidth="250.0" styleClass="alertLabelInventoryAdd" />
+    </children>
+</AnchorPane>

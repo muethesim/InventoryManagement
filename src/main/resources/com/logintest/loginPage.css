@@ -1,0 +1,29 @@
+@import 'fonts/fonts.css';
+
+.fields {
+    -fx-text-fill: #7e8899;
+    -fx-border-color: #161c27;
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-font-size: 15;
+}
+.fields .floating-text {
+	-fx-text-fill: #7e8899;
+}
+
+.sidePane {
+    -fx-background-color: linear-gradient(to top right, #161c27, #323b4b);
+}
+
+.sideButtons {
+    -fx-background-color:  #161c27;
+    -fx-text-fill: #7e8899;
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-font-size: 15;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.sideButtons : hover{
+    -fx-text-fill: #3aca89;
+    -fx-font-size: 17;
+}

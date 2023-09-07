@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchorPane" prefHeight="675.0" prefWidth="705.0" style="-fx-background-color: #ffffff;" stylesheets="@viewEditUser.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logintest.Controllers.AdminControllers.viewEditUserController">
+   <children>
+      <TableView fx:id="accountsTable" layoutX="29.0" layoutY="25.0" onMouseClicked="#fillData" prefHeight="312.0" prefWidth="640.0" styleClass="tableContentsViewEditUser" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="25.0">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="37.600006103515625" styleClass="tableContentsViewEditUser" text="ID" />
+            <TableColumn fx:id="usernameColumn" prefWidth="80.80001831054688" styleClass="tableContentsViewEditUser" text="Username" />
+            <TableColumn fx:id="passwordColumn" prefWidth="76.800048828125" styleClass="tableContentsViewEditUser" text="Password" />
+            <TableColumn fx:id="fnameColumn" prefWidth="90.40000915527344" styleClass="tableContentsViewEditUser" text="First Name" />
+            <TableColumn fx:id="lnameColumn" prefWidth="81.5999755859375" styleClass="tableContentsViewEditUser" text="Last Name" />
+            <TableColumn fx:id="phoneNoColumn" prefWidth="97.5999755859375" styleClass="tableContentsViewEditUser" text="Phone No" />
+            <TableColumn fx:id="accessLevelColumn" prefWidth="171.20001220703125" styleClass="tableContentsViewEditUser" text="Access Level" />
+         </columns>
+      </TableView>
+      <MFXButton buttonType="RAISED" layoutX="451.0" layoutY="340.0" onAction="#removeAction" prefHeight="40.0" prefWidth="100.0" styleClass="buttonsViewEditUser" text="Remove" AnchorPane.bottomAnchor="175.0" />
+      <MFXButton buttonType="RAISED" layoutX="451.0" layoutY="418.0" onAction="#editAction" prefHeight="40.0" prefWidth="100.0" styleClass="buttonsViewEditUser" text="Edit" AnchorPane.bottomAnchor="120.0" />
+      <Label fx:id="alertLabel" alignment="CENTER" layoutX="388.0" layoutY="576.0" prefHeight="30.0" prefWidth="225.0" styleClass="alertLabelViewEditUser" AnchorPane.bottomAnchor="68.60000000000002" />
+      <MFXTextField fx:id="usernameField" floatMode="DISABLED" layoutX="175.0" layoutY="338.0" prefHeight="25.0" prefWidth="180.0" />
+      <Label layoutX="38.0" layoutY="333.0" prefHeight="40.0" prefWidth="120.0" styleClass="labelsViewEditUser" text="Username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="367.0" prefHeight="40.0" prefWidth="120.0" styleClass="labelsViewEditUser" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <MFXTextField fx:id="passwordField" floatMode="DISABLED" layoutX="175.0" layoutY="376.0" prefHeight="25.0" prefWidth="180.0" />
+      <Label layoutX="38.0" layoutY="527.0" prefHeight="40.0" prefWidth="120.0" styleClass="labelsViewEditUser" text="Access Level">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="407.0" prefHeight="40.0" prefWidth="120.0" styleClass="labelsViewEditUser" text="First Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="447.0" prefHeight="40.0" prefWidth="120.0" styleClass="labelsViewEditUser" text="Last Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <MFXTextField fx:id="fnameField" floatMode="DISABLED" layoutX="175.0" layoutY="416.0" prefHeight="25.0" prefWidth="180.0" />
+      <MFXTextField fx:id="lnameField" floatMode="DISABLED" layoutX="175.0" layoutY="453.0" prefHeight="25.0" prefWidth="180.0" />
+      <Label layoutX="38.0" layoutY="487.0" prefHeight="40.0" prefWidth="120.0" styleClass="labelsViewEditUser" text="Phone No">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <MFXTextField fx:id="phoneNo" floatMode="DISABLED" layoutX="175.0" layoutY="491.0" prefHeight="25.0" prefWidth="180.0" />
+      <MFXTextField fx:id="accessLevelField" floatMode="DISABLED" layoutX="175.0" layoutY="531.0" prefHeight="30.0" prefWidth="27.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+@import 'fonts/fonts.css';
+
+.menuWindow {
+    -fx-background-color: #161c27;
+}
+
+.menuSecondaryButtons {
+    -fx-background-color: #161c27;
+    -fx-text-fill: #7e8899;
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-font-size: 15;
+}
+
+.menuButtons {
+    -fx-background-color: #161c27;
+    -fx-text-fill: #7e8899;
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-font-size: 15;
+}
+
+.menuButtons: hover {
+    -fx-background-color: #353e4d;
+    -fx-text-fill: #7e8899;
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-font-size: 18;
+}
+
+.optionButtons {
+    -fx-background-color: #323b4b;
+    -fx-border-color: #323b4b;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+.buttonLabels {
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-font-size: 18;
+}
+
+.userNameLabel {
+    -fx-background-color: #f4f4f4;
+    -fx-border-color: #f4f4f4;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-font-size: 18;
+}
+
+.toolTip {
+    -fx-font-family: 'Comfortaa Regular';
+    -fx-font-size: 10;
+    -fx-background-color: #161c27;
+    -fx-text-fill: #ffffff;
+}
+
+.liveTime {
+    -fx-font-family: 'Comfortaa Bold';
+    -fx-text-fill: #323b4b;
+    -fx-font-size: 16;
+}
+
+.calculatorRoot {
+    -fx-background-color: #161c27;
+    -fx-background-radius: 28;
+}
+
+.calculatorMainPane {
+    -fx-background-color: linear-gradient(to bottom right, #161c27, #323b4b);
+    -fx-background-radius: 15 15 25 25;
+}
+
+.calculatorOthers {
+    -fx-background-color: #3f4a5c;
+    -fx-background-radius: 15;
+}
+
+.fieldLabels {
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-font-size: 20;
+}
+
+.textFields {
+    -fx-border-radius: 10;
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-font-size: 14;
+}
+
+.loginid {
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15;
+}

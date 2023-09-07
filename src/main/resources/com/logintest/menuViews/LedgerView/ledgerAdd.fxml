@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" onMouseClicked="#changeFocus" prefHeight="677.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" stylesheets="@ledgerAdd.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logintest.Controllers.LedgerAddController">
+    <children>
+        <MFXButton fx:id="backButton" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="26.0" layoutY="33.0" onAction="#handleSubmenu" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </MFXButton>
+      <MFXTextField fx:id="id" borderGap="0.0" editable="false" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="138.0" layoutY="135.0" prefHeight="40.0" prefWidth="95.0" styleClass="textFieldsLedgerAdd" AnchorPane.bottomAnchor="502.0" AnchorPane.leftAnchor="160.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></MFXTextField>
+      <Label layoutX="25.0" layoutY="99.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="105.0" styleClass="labelsLedgerAdd" text="ID" AnchorPane.bottomAnchor="502.0" AnchorPane.leftAnchor="37.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Label>
+      <Label layoutX="25.0" layoutY="178.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="105.0" styleClass="labelsLedgerAdd" text="Name" AnchorPane.bottomAnchor="447.0" AnchorPane.leftAnchor="37.0" />
+      <MFXTextField fx:id="name" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="139.0" layoutY="190.0" prefHeight="40.0" prefWidth="250.0" styleClass="textFieldsLedgerAdd" AnchorPane.bottomAnchor="447.0" AnchorPane.leftAnchor="160.0" />
+      <Label layoutX="25.0" layoutY="300.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="105.0" styleClass="labelsLedgerAdd" text="Type" AnchorPane.bottomAnchor="392.0" AnchorPane.leftAnchor="37.0" />
+      <ChoiceBox fx:id="type" layoutX="139.0" layoutY="245.0" prefHeight="40.0" prefWidth="250.0" styleClass="textFields" AnchorPane.bottomAnchor="392.0" AnchorPane.leftAnchor="160.0" />
+      <Label layoutX="25.0" layoutY="300.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="105.0" styleClass="labelsLedgerAdd" text="Amount" AnchorPane.bottomAnchor="337.0" AnchorPane.leftAnchor="37.0" />
+      <MFXTextField fx:id="amount" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="138.0" layoutY="300.0" onKeyReleased="#numberValidation" prefHeight="40.0" prefWidth="250.0" styleClass="textFieldsLedgerAdd" AnchorPane.bottomAnchor="337.0" AnchorPane.leftAnchor="160.0" />
+      <Label layoutX="37.0" layoutY="359.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="105.0" styleClass="labelsLedgerAdd" text="Address" AnchorPane.bottomAnchor="278.0" AnchorPane.leftAnchor="37.0" />
+      <MFXTextField fx:id="address" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="160.0" layoutY="359.0" prefHeight="140.0" prefWidth="708.0" styleClass="textFieldsLedgerAdd" AnchorPane.bottomAnchor="178.0" AnchorPane.leftAnchor="160.0" />
+      <Label layoutX="25.0" layoutY="514.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="118.0" styleClass="labelsLedgerAdd" text="Phone No: " AnchorPane.bottomAnchor="123.0" AnchorPane.leftAnchor="37.0" />
+      <MFXTextField fx:id="phoneno" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="139.0" layoutY="514.0" prefHeight="40.0" prefWidth="250.0" styleClass="textFieldsLedgerAdd" AnchorPane.bottomAnchor="123.0" AnchorPane.leftAnchor="160.0" />
+      <MFXButton buttonType="RAISED" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" layoutX="162.0" layoutY="623.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#submitAction" prefHeight="40.0" prefWidth="95.0" styleClass="buttonsLedgerAdd" text="Submit" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="162.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MFXButton>
+      <MFXButton buttonType="RAISED" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" layoutX="314.0" layoutY="623.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#clearAction" prefHeight="40.0" prefWidth="95.0" styleClass="buttonsLedgerAdd" text="Clear" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="314.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MFXButton>
+      <Label fx:id="alertLabel" alignment="CENTER" layoutX="160.0" layoutY="571.0" prefHeight="40.0" prefWidth="250.0" styleClass="alertLabelLedgerAdd" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="677.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" stylesheets="@salesReciept.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logintest.Controllers.SalesRecieptController">
+    <children>
+        <MFXButton fx:id="backButton" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="26.0" layoutY="33.0" onAction="#handleSubmenu" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </MFXButton>
+      <Label layoutX="71.0" layoutY="303.0" prefHeight="40.0" prefWidth="105.0" styleClass="labelsSalesReciept" text="ID" AnchorPane.leftAnchor="70.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <MFXTextField fx:id="id" borderGap="0.0" editable="false" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="190.0" layoutY="301.0" prefHeight="40.0" prefWidth="72.0" styleClass="textFieldsSalesReciept" AnchorPane.leftAnchor="190.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+      <Label layoutX="71.0" layoutY="361.0" prefHeight="40.0" prefWidth="105.0" styleClass="labelsSalesReciept" text="Ledger" AnchorPane.leftAnchor="70.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <MFXTextField fx:id="ledger" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="190.0" layoutY="359.0" onKeyReleased="#ledgerAutoCompletion" prefHeight="40.0" prefWidth="250.0" styleClass="textFieldsSalesReciept" AnchorPane.leftAnchor="190.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+      <Label layoutX="71.0" layoutY="424.0" prefHeight="40.0" prefWidth="105.0" styleClass="labelsSalesReciept" text="Amount" AnchorPane.leftAnchor="70.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <MFXTextField fx:id="amount" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="190.0" layoutY="422.0" prefHeight="40.0" prefWidth="250.0" styleClass="textFieldsSalesReciept" AnchorPane.leftAnchor="190.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+      <MFXButton fx:id="submitButton" buttonType="RAISED" layoutX="190.0" layoutY="535.0" onAction="#submitAction" prefHeight="38.0" prefWidth="95.0" styleClass="buttonsSalesReciept" text="Submit">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MFXButton>
+      <Label fx:id="alertLabel" alignment="CENTER" layoutX="190.0" layoutY="480.0" prefHeight="40.0" prefWidth="250.0" styleClass="alertLabelSalesReciept" />
+      <MFXButton contentDisplay="GRAPHIC_ONLY" layoutX="308.0" layoutY="291.0" onAction="#upAction" prefHeight="12.0" prefWidth="26.0">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/up.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MFXButton>
+      <MFXButton contentDisplay="GRAPHIC_ONLY" layoutX="308.0" layoutY="323.0" onAction="#downAction" prefHeight="12.0" prefWidth="26.0">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/down.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MFXButton>
+    </children>
+</AnchorPane>

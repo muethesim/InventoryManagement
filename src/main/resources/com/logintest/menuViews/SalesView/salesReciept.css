@@ -1,0 +1,28 @@
+@import 'fonts/fonts.css';
+
+.labelsSalesReciept {
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-font-size: 17;
+}
+
+.buttonsSalesReciept {
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-font-size: 17;
+    -fx-border-radius: 10;
+}
+
+.alertLabelSalesReciept {
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-font-size: 11;
+}
+
+.textFieldsSalesReciept {
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-text-fill: #323b4b;
+    -fx-border-radius: 10;
+    -fx-border-color: #a3a19f;
+    -fx-font-size: 15;
+}

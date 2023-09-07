@@ -1,0 +1,24 @@
+.background {
+    -fx-background-color: linear-gradient(to top right, #161c27, #323b4b);
+}
+
+.text {
+    -fx-text-fill: #7e8899;
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-font-size: 15;
+}
+
+.loginButton {
+    -fx-background-color: #353e4d;
+    -fx-text-fill: #7e8899;
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-font-size: 15;
+}
+
+.passwordField {
+    -fx-background-color: #353e4d;
+    -fx-text-fill: #7e8899;
+    -fx-border-color: #161c27;
+    -fx-font-family: 'Comfortaa SemiBold';
+    -fx-font-size: 15;
+}

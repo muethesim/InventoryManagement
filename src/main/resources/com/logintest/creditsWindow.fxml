@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="339.0" prefWidth="250.0" styleClass="background" stylesheets="@loginSettings.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logintest.Controllers.CreditsWindowController">
+   <children>
+      <Label layoutX="38.0" layoutY="150.0" prefHeight="38.0" prefWidth="197.0" styleClass="text" text="Muhammed Danish P P" />
+      <Label layoutX="65.0" layoutY="96.0" prefHeight="38.0" prefWidth="139.0" styleClass="text" text="Muethesim P K" />
+      <Label layoutX="62.0" layoutY="206.0" prefHeight="38.0" prefWidth="139.0" styleClass="text" text="Roshan Hussein" />
+      <Label layoutX="62.0" layoutY="262.0" prefHeight="38.0" prefWidth="139.0" styleClass="text" text="Vysakh P Karun" />
+      <AnchorPane prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <FontIcon fill="#161c27" iconColor="#161c27" iconLiteral="mdi2w-window-close" iconSize="27" layoutX="209.0" layoutY="29.0" onMouseClicked="#close" strokeWidth="0.0" text="󰖭">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontIcon>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

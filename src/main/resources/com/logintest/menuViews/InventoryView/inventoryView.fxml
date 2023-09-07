@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="677.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" stylesheets="@inventoryView.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logintest.Controllers.InventoryViewController">
+    <children>
+        <MFXButton fx:id="backButton" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="26.0" layoutY="33.0" onAction="#handleSubmenu" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </MFXButton>
+      <TableView fx:id="stable" layoutX="71.0" layoutY="273.0" prefHeight="314.0" prefWidth="508.0" styleClass="tableContentsInventoryView">
+         <columns>
+            <TableColumn fx:id="sitems" prefWidth="167.19998168945312" styleClass="tableContentsInventoryView" text="Items" />
+            <TableColumn fx:id="sstocks" prefWidth="120.00007629394531" styleClass="tableContentsInventoryView" text="Stocks Remaining" />
+            <TableColumn fx:id="sprice" prefWidth="121.60003662109375" styleClass="tableContentsInventoryView" text="Price" />
+            <TableColumn fx:id="svalue" prefWidth="96.79998779296875" styleClass="tableContentsInventoryView" text="Value" />
+         </columns>
+      </TableView>
+      <Label layoutX="115.0" layoutY="167.0" prefHeight="40.0" prefWidth="105.0" styleClass="labelsInventoryView" text="Search" />
+      <MFXTextField fx:id="search" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="252.0" layoutY="167.0" onKeyReleased="#searched" prefHeight="40.0" prefWidth="258.0" styleClass="textFieldsInventoryAdd">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+    </children>
+</AnchorPane>

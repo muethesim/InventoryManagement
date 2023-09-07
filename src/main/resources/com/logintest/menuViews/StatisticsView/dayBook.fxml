@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="677.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logintest.Controllers.StatisticsDaybookController">
+    <children>
+        <MFXButton fx:id="backButton" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="26.0" layoutY="33.0" onAction="#handleSubmenu" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </MFXButton>
+      <Button layoutX="697.0" layoutY="63.0" mnemonicParsing="false" onAction="#submitClicked" text="SUBMIT">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <DatePicker fx:id="from" layoutX="230.0" layoutY="63.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+      <DatePicker fx:id="to" layoutX="472.0" layoutY="63.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+      <Label layoutX="191.0" layoutY="67.0" text="From :" />
+      <Label layoutX="440.0" layoutY="67.0" text="To :" />
+      <Label layoutX="208.0" layoutY="143.0" text="Total Purchase : " />
+      <Label layoutX="372.0" layoutY="143.0" text="Total Sales : " />
+      <Label layoutX="550.0" layoutY="144.0" text="Cash Purchase : " />
+      <Label layoutX="697.0" layoutY="144.0" text="Cash Sales :" />
+      <PieChart id="pieChart" fx:id="pieChart" layoutX="188.0" layoutY="201.0" prefHeight="274.0" prefWidth="276.0" />
+      <PieChart id="pieChart" fx:id="cashPieChart" layoutX="471.0" layoutY="201.0" prefHeight="274.0" prefWidth="292.0" />
+      <Label fx:id="purchase" alignment="CENTER" layoutX="205.0" layoutY="173.0" prefHeight="18.0" prefWidth="86.0" />
+      <Label fx:id="sales" alignment="CENTER" layoutX="368.0" layoutY="173.0" prefHeight="18.0" prefWidth="74.0" />
+      <Label fx:id="cashPurchase" alignment="CENTER" layoutX="555.0" layoutY="173.0" prefHeight="18.0" prefWidth="74.0" />
+      <Label fx:id="cashSales" alignment="CENTER" layoutX="693.0" layoutY="173.0" prefHeight="18.0" prefWidth="66.0" />
+    </children>
+</AnchorPane>

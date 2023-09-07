@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="677.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" stylesheets="@ledgerAddBalance.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logintest.Controllers.LedgerAddBalanceController">
+    <children>
+        <MFXButton fx:id="backButton" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="26.0" layoutY="33.0" onAction="#handleSubmenu" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </MFXButton>
+      <Label layoutX="62.0" layoutY="306.0" prefHeight="40.0" prefWidth="100.0" styleClass="labelsLedgerAddBalance" text="Ledger" AnchorPane.leftAnchor="70.0" />
+      <MFXTextField fx:id="ledger" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="168.0" layoutY="306.0" onKeyReleased="#ledgerAutoCompletion" prefHeight="40.0" prefWidth="274.0" styleClass="textFieldsLedgerAddBalance" AnchorPane.leftAnchor="170.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+      <Label layoutX="62.0" layoutY="366.0" prefHeight="40.0" prefWidth="94.0" styleClass="labelsLedgerAddBalance" text="Amount" AnchorPane.leftAnchor="70.0" />
+      <MFXTextField fx:id="amount" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="169.0" layoutY="366.0" prefHeight="40.0" prefWidth="274.0" styleClass="textFieldsLedgerAddBalance" AnchorPane.leftAnchor="170.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+      <MFXButton fx:id="submitButton" buttonType="RAISED" layoutX="167.0" layoutY="499.0" onAction="#submitAction" prefHeight="40.0" prefWidth="95.0" styleClass="buttonsLedgerAddBalance" text="Submit" AnchorPane.leftAnchor="170.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MFXButton>
+      <MFXButton fx:id="clearButton" buttonType="RAISED" layoutX="348.0" layoutY="499.0" onAction="#clearAction" prefHeight="40.0" prefWidth="95.0" styleClass="buttonsLedgerAddBalance" text="Clear" AnchorPane.leftAnchor="348.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MFXButton>
+      <Label fx:id="alertLabel" alignment="CENTER" layoutX="169.0" layoutY="436.0" prefHeight="40.0" prefWidth="274.0" styleClass="alertLabelLedgerAddBalance" />
+    </children>
+</AnchorPane>

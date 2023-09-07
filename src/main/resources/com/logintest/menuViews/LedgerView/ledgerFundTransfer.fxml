@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="677.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" stylesheets="@ledgerFundTransfer.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logintest.Controllers.LedgerFundTransferController">
+    <children>
+        <MFXButton fx:id="backButton" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="26.0" layoutY="33.0" onAction="#handleSubmenu" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </MFXButton>
+      <MFXTextField fx:id="id" borderGap="0.0" disable="true" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="202.0" layoutY="287.0" prefHeight="40.0" prefWidth="95.0" styleClass="textFieldsLedgerFundTransfer">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+      <Label layoutX="97.0" layoutY="287.0" prefHeight="40.0" prefWidth="82.0" styleClass="labelsLedgerFundTransfer" text="ID" />
+      <Label layoutX="97.0" layoutY="403.0" prefHeight="40.0" prefWidth="90.0" styleClass="labelsLedgerFundTransfer" text="To" />
+      <Label layoutX="97.0" layoutY="346.0" prefHeight="40.0" prefWidth="90.0" styleClass="labelsLedgerFundTransfer" text="From" />
+      <Label layoutX="97.0" layoutY="461.0" prefHeight="40.0" prefWidth="90.0" styleClass="labelsLedgerFundTransfer" text="Amount" />
+      <MFXTextField fx:id="from" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="202.0" layoutY="346.0" onKeyReleased="#dataAutoCompletionForFrom" prefHeight="40.0" prefWidth="218.0" styleClass="textFieldsLedgerFundTransfer">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+      <MFXTextField fx:id="to" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="202.0" layoutY="403.0" onKeyReleased="#dataAutoCompletionForTo" prefHeight="40.0" prefWidth="218.0" styleClass="textFieldsLedgerFundTransfer">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+      <MFXTextField fx:id="amount" borderGap="0.0" floatMode="DISABLED" floatingText="ID" floatingTextGap="0.0" layoutX="202.0" layoutY="461.0" prefHeight="40.0" prefWidth="218.0" styleClass="textFieldsLedgerFundTransfer">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MFXTextField>
+      <MFXButton fx:id="submitButton" buttonType="RAISED" layoutX="202.0" layoutY="574.0" onAction="#submitAction" prefHeight="40.0" prefWidth="95.0" styleClass="buttonsLedgerFundTransfer" text="Submit">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MFXButton>
+      <MFXButton fx:id="clearButton" buttonType="RAISED" layoutX="326.0" layoutY="574.0" onAction="#clearAction" prefHeight="40.0" prefWidth="95.0" styleClass="buttonsLedgerFundTransfer" text="Clear">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MFXButton>
+      <Label fx:id="alertLabel" alignment="CENTER" layoutX="202.0" layoutY="516.0" prefHeight="40.0" prefWidth="218.0" styleClass="alertLabelLedgerFundTransfer" />
+    </children>
+</AnchorPane>
